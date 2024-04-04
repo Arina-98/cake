@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/simple-adaptive-slider.css">
+    <script defer src="js/simple-adaptive-slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var slider = new ItcSimpleSlider('.itcss', {
+                loop: true,
+                autoplay: true,
+                swipe: true,
+                interval: 8000,
+            });
+        });
+    </script>
+    <script src="js/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>US Trip</title>
+</head>
+
+<body>
+
+
+
+
+
+
+    <div class="window" id="window-support">
+        <div class="window_main">
+            <form class="application">
+                <p class="head_text" style="margin-bottom: 15px;">Оплата:</p>
+                <a class="close" onclick="set_window('window-support',false)"></a>
+
+                <input type="text" id="phone" placeholder="Номер телефона" />
+
+                <input type="text" id="email" placeholder="Адрес доставки" />
+
+                <div class="horizontal" style="margin-bottom: 10px;">
+                    <p style="font-weight: 600; color:#FB6491; margin-right: 30px;">Выберите количество:</p>
+                    <select id="money">
+                        <option value="15">1</option>
+                        <option value="25">2</option>
+                        <option value="50">3</option>
+                        <option value="75">4</option>
+                        <option value="100">5</option>
+                      </select>                 
+                </div>
+
+                <input type="text" id="cardnumber" placeholder="Номер карты" />
+                <div class="horizontal">
+                    <input style="margin-right: 20px;" type="text" id="date" placeholder="Дата окончания" />
+                    <input type="value" id="CVC" placeholder="CVC" />
+                </div>
+
+                <div class="horizontal flexcenter">
+                    <button style="margin: auto;" onclick="set_window('window-support',false); set_payment();">
+                        Оплатить 
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+	
+	
+	
+	
+	<div class="horizontal" style="margin-bottom: 100px;">
+        <div class="menu">
+            <div style="margin-left:60px;">
+                <p class="ustrip">
+                    <img src="images/1.png" alt="hotle">
+                </p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="scaler">
+                <a href="#aboutme"><p>
+                    О нас
+                </p></a>
+            </div>
+            <div class="scaler">
+                <a href="#route"><p>
+                    Карта
+                </p></a>
+            </div>
+            <div class="scaler">
+                <a href="#contacts"><p>
+                    Контакты
+                </p></a>
+            </div>
+            <div class="scaler">
+                <a href="#contacts"><p>
+                    Заказать
+                </p></a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="map">
+        <img src="images/2.png" alt="hotle">
+    </div>
+    <p class="head_text center" <img src="images/3.png" alt="hotle"><br> <span style="color: #FB6491;">
+    </span>Я занимаюсь профессиональной выпечкой тортов уже более 15 лет. На своем опыте знаю, <br> в момент процесса выпечки всегда не вовремя заканчивается нужный краситель,<br>  ломается фигурка, рассыпается смесь.</p>
+    
+
+
+
+
+
+    <section class="slider">
+        <div>
+        <img src="images/4.png">
+        <div class="desc">
+        <h2><span>Кондитерская глазурь</span> </h2>
+        <p>800 руб</p>
+        <a  class="btn" onclick="set_window('window-support',true)">Перейти</a>
+        </div>
+        </div>
+         
+        <div>
+        <img src="images/5.png">
+        <div class="desc">
+        <h2><span>Мастика (за 1 кг)</span> </h2>
+        <p>1200 руб</p>
+        <a class="btn" onclick="set_window('window-support',true)">Перейти</a>
+        </div>
+        </div>
+         
+        <div>
+        <img src="images/6.png">
+        <div class="desc">
+        <h2><span>Шоколад кондитерский (за 500 г)</span> </h2>
+        <p>1500 руб</p>
+        <a class="btn" onclick="set_window('window-support',true)">Перейти</a>
+        </div>
+        </div>
+         
+        <div>
+        <img src="images/7.png">
+        <div class="desc">
+        <h2><span>Сахарная посыпка (за 100 г)</span> </h2>
+        <p>300 руб</p>
+        <a class="btn" onclick="set_window('window-support',true)">Перейти</a>
+        </div>
+        </div>
+         
+        <div>
+        <img src="images/8.png">
+        <div class="desc">
+        <h2><span>Украшения из карамели (за штуку)</span> </h2>
+        <p>300 руб</p>
+        <a class="btn" onclick="set_window('window-support',true)">Перейти</a>
+        </div>
+        </div>
+         
+        <div>
+        <img src="images/9.png">
+        <div class="desc">
+        <h2><span>Вафельные рожки (набор 10 штук)</span> </h2>
+        <p>400 руб</p>
+        <a  class="btn" onclick="set_window('window-support',true)">Перейти</a>
+        </div>
+        </div>  
+        </section>
+  
+
+    
+    
+    
+    
+  
+    
+    </div>
+    
+<div class="flexcenter" style="padding: 0px 0px 0px 0px; margin: auto;   "  id="aboutme">
+        <div class="horizontal">
+            <div class="maintext">
+                <div class="horizontal flexcenter" style="margin-bottom: 30px;margin-left: 0px;">
+                    <p class="head_text boxname"></p>
+                </div>
+                <div class="flexcenter" style="margin-right: 30px;">
+                    <p class="body_text">
+					Мы находимся: <br><br>
+                        · станция метро Бухарестская (Бухарестская ул. 9)<br>
+                        · станция метро Приморская (Кораблестроителей 24)<br>
+                        · станция метро Адмиралтейская (Невский пр. 4 
+Главный офис)<br>
+· станция метро Лесная (Лесной пр. 21)
+<br><br> Наши магазины работают ежедневно с 10 до 21
+ДОСТАВКА В ЛЮБОЕ ВРЕМЯ СУТОК
+                    </p>
+                </div>
+            </div>
+            <div class="iconer me" style="background-image: url('images/14.png')">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="flexcenter" style="padding: 0px 0px 0px 0px; margin: auto; "  id="aboutme">
+        <div class="horizontal" style="background:white;">
+            <div class="iconer me" style="background-image: url('images/15.png')">
+            </div>
+            <div class="maintext" style="background-color: white;">
+                <div class="horizontal flexcenter" style="margin-bottom: 30px;margin-right: 0px;">
+                    <p class="head_text boxname"></p>
+                </div>
+                <div class="flexcenter" style="margin-left: 30px;">
+                    <p class="body_text">
+					Доставка <br> <br>
+                        РАБОТАЕМ КРУГЛОСУТОЧНО <br>
+
+Самовывоз 24 часа. <br>
+
+Курьерская доставка на дом по СПб и Лен.области. <br>
+
+Прокат кондитерских форм и приспособлений. <br>
+
+Печатаем на кондитерский изделеях <br>
+
+
+Индивидуальные консультации по подбору оптимального решения.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="map" style=" background-color: #f9c5d1; padding: 0px 0px 0px 0px; margin: auto; ">
+        
+   
+	 <p class="head_text center" style=" background-color: #f9c5d1; padding: 10px 0px 0px 0px; margin: auto; "><span style="color: #FB6491;">
+    </span>Специальное предложение : </p>
+	 </div>
+<div class="container2">
+    <div class="column2">
+        <img src="images/16.png" alt="Фото 1">
+        <p>БЕСПЛАТНАЯ ДОСТАВКА 24 ЧАСА <br> При заказе от 5000 РУБ </p>
+    </div>
+    <div class="column2">
+        <img src="images/17.png" alt="Фото 2">
+        <p>ДОСТАВКА КУРЬЕРСКОЙ СЛУЖБОЙ <br> По СПб и ЛО 24 часа  </p>
+    </div>
+</div>
+
+<div class="flexcenter" style="padding: 0px 0px 0px 0px; margin: auto;  background-color: white;   "  id="aboutme">
+        <div class="horizontal" style="height:800px; weight = 800px; background-color: white;">
+            <div class="maintext" style=" background-color: white;">
+                <div class="horizontal flexcenter" style="margin-bottom: 30px;margin-left: 0px; background-color: white;">
+                    <p class="head_text boxname" style="background-color: white;"></p>
+                </div>
+                <div class="flexcenter" style="margin-right: 30px; background-color: white;">
+                    <p class="body_text" style="background-color: white;">
+					Телефон: 8 781 211 12 23 <br>
+					Email: info@pinkcake.ru	<br><br><br>
+					Мы находимся: <br>
+                        · станция метро Бухарестская (Бухарестская ул. 9)<br>
+                        · станция метро Приморская (Кораблестроителей 24)<br>
+                        · станция метро Адмиралтейская (Невский пр. 4 
+Главный офис)<br>
+· станция метро Лесная (Лесной пр. 21)
+<br><br> Наши магазины работают ежедневно с 10 до 21
+ДОСТАВКА В ЛЮБОЕ ВРЕМЯ СУТОК
+                    </p>
+                </div>
+            </div>
+            <div class="iconer me" style="background-image: url('images/18.png')">
+            </div>
+        </div>
+    </div>
+
+
+
+    
+	
+	
+
+
+    <script>
+        function createSlick(){  
+     
+     $(".slider").not('.slick-initialized').slick({
+     centerMode: true,
+     autoplay: true,
+     dots: true,  
+     arrows: true,
+     slidesToShow: 3,
+     responsive: [{  
+     breakpoint: 768,
+     settings: {
+     dots: false,
+     arrows: false,
+     infinite: true,
+     slidesToShow: 1,
+     slidesToScroll: 1
+     }  
+     }]
+     });  
+     
+     }  
+     createSlick();
+     
+     $(window).on( 'resize', createSlick );
+     
+     
+       </script>
+</body>
+</html>
